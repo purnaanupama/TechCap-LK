@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Play&family=Titillium+Web&display=swap');
+
+*{margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;}
+
+body{
+    background-color: #5d5c5c;
+}
+
+.navbar{
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    background-color: rgb(72, 71, 71);
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,1);
+}
+.navbar .buttonSet{
+    display: flex;
+    padding: 20px;
+    gap: 15px;
+    margin-left: 12px;
+}
+.navbar .Logo{
+    margin-top: 3px;
+    margin-right: 10px;
+    padding: 10px;
+}
+.navbar .buttonSet button{
+    padding: 7px;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 6px;
+    background:linear-gradient(to left,rgb(120, 1, 1),#be3519 55%,rgb(227, 122, 122));
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.navbar .buttonSet button:hover{
+    background:linear-gradient(to left,rgb(106, 1, 1),#9f2a13 55%,rgb(195, 98, 98));
+}
+
+.main{
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10% auto;
+    margin-top: 30px;
+     display: flex;
+     flex-direction: column;
+     gap:30px;
+     align-items: center;
+     width: 80vw;
+     margin-bottom: 30px;
+     background-color: #bfbdbd;
+     padding: 30px;
+     }
+.des1,
+.des2{
+    width: 900px;
+}
+
+.footer{
+        width: 100%;
+        background: #333;
+        height: 80px;
+        display: flex;
+        align-items: center;
+      }
+.brand{
+        padding-left: 30px;
+        color: #b6b0b0;
+      }
+.demo,
+.down{
+    background: #333;
+    color: azure;
+    border: none;
+    border-radius: 6px;
+    width: 120px;
+    padding: 7px;
+    cursor: pointer;
+}
+.demo a{color: white;
+        text-decoration: none;}
+.demo:hover{
+    background: #4b4b4b;
+}
+.down:hover{
+    background: #4b4b4b;
+}
+
+.TopToBottom{
+    position: fixed;
+    visibility: hidden;
+    width: 50px;
+    height: 50px;
+    background-color: #cccbcb;
+    opacity: 0.7;
+    z-index: 30;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TopToBottom i{
+   font-size: 20px;
+   text-align: center;
+}
+.TopToBottom:hover{
+    opacity: 1;
+}
+html{
+    scroll-behavior: smooth;
+}

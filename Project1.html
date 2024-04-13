@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Colour Generatort</title>
+    <link rel="stylesheet" href="./css/project1.css">
+    <link rel="stylesheet" href="./css/code.css">
+    <link rel="stylesheet" href="./css/prism.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div class="navbar">
+        <div class="buttonSet">
+            <button><a href='./index.html' style="color: white; text-decoration: none;">Home</a></button>
+            <button><a href='./BeginnerProjects.html' style="color: white; text-decoration: none;">Projects</a></button>
+        </div>
+        <div class="Logo"><img src="./images/logo.jpg" alt="logo"></div>
+    </div>
+    <div class="TopToBottom .HideUpBTN">
+        <i class="fa-solid fa-arrow-up"></i>
+      </div>
+    <div class="main">
+        <h2>Random Colour Generator</h2>
+        <div class="des1">Hey there, fellow beginners! Today, we're diving into the fascinating world of web development by building a simple yet engaging Random Color Generator web application. Don't worry if you're new to coding; I'll guide you through each step of the process.<br>
+        
+        If you are interested on watching how the application is developed please watch the youtube video below. It will also give you a basic understanding of how this project is done.
+
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/H-LvaBNLDSQ?si=3Bgt63KXFSiPHUr1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="des2">
+            To create this program [Random Colour Generator]. First, you need to create three Files one HTML File and another one is CSS File. After creating these files just paste the following codes in your file.
+
+            First, create an HTML file with the name of Project1.html and paste the given codes in your HTML file. Remember, you’ve to create a file with .html extension.
+        </div>
+        <div class="container">
+            <div class="code-wrapper">
+                <pre>
+                    <code id="code" class="language-HTML">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+&lt;meta name="viewport" content="width=, initial-scale=1.0"&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Random Colour Generator&lt;/h1&gt;
+&lt;div class="container"&gt;
+&lt;/div&gt;
+&lt;script src="index.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;       
+                    </code>
+                </pre>
+                <button id="copy-button">copy</button>
+            </div>
+        </div>
+        <div class="des2">
+            Second, create a CSS file with the name of project1.css and paste the given codes in your CSS file. Remember, you’ve to create a file with .css extension.
+        </div>
+    <!--CSS code-->
+    <div class="container">
+        <div class="code-wrapper">
+            <pre>
+                <code id="code1" class="language-CSS">
+body{background: #e7bcf8;
+margin: 0;
+font-family: sans-serif;}
+h1{text-align: center;
+color: blueviolet;}
+                    
+.container{display: flex;
+          flex-wrap: wrap; /* when the tab is getting thiner content moves down one another */ 
+          justify-content: center;}
+                    
+.colour-container{background-color: orange;
+                 width: 300px;
+                 height: 150px;
+                 color:white;
+                 margin: 5px;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 font-size: 25px;
+                 text-shadow: 2px 2px 4px rgba(0,0,0,.5);  /*adds shadow to text */
+                 border-radius: 10px;}       
+                </code>
+            </pre>
+            <button id="copy-button1">copy</button>
+        </div>
+    </div>
+    <div class="des2">
+        Finally, add the following JavaScript code to your code.js file. This script code will make your colour generator app functional, which means now you can get a different types of colours with their hashcodes in every tab refresh.<br>
+        
+This JavaScript code generates a specified number of color boxes dynamically within a container element in an HTML document.
+    </div>
+    <div class="container">
+        <div class="code-wrapper">
+            <pre>
+                <code id="code2" class="language-javascript">
+/* creating colour boxes as many as we want using javascript from a loop*/
+const containerEl = document.querySelector(".container");
+/*we are bringing the main container div to javascript because we append small colour boxes inside this container*/
+                    
+for (let index = 0; index < 32; index++) {    /*run the loop until index 32 so this will generate 30 colour boxes*/
+const colorContainer = document.createElement("div"); /*here document means our html file from create element function we create div*/
+colorContainer.classList.add("colour-container");/*this line adds a class of colour-container to every div we genrate in previous line*/
+containerEl.appendChild(colorContainer);/*here we are including the divs into the main container */
+                         }
+const colorContainerEls = document.querySelectorAll(".colour-container");
+                    generateColors();
+                    function generateColors() {
+                    colorContainerEls.forEach((colorContainer) => {
+                        const newColorCode = randomColor();
+                        colorContainer.style.backgroundColor = ("#" + newColorCode);
+                        colorContainer.innerText = "#" + newColorCode;
+                      });
+                    }
+                    
+                    function randomColor() {
+                      const chars = "0123456789abcdef";
+                      const colorCodeLength = 6;
+                      let colorCode = "";
+                      for (let index = 0; index < colorCodeLength; index++) {
+                        const randomNum = Math.floor(Math.random() * chars.length);
+                        colorCode += chars.substring(randomNum, randomNum + 1);
+                      }
+                      return colorCode;
+                    }     
+                </code>
+            </pre>
+            <button id="copy-button2">copy</button>
+        </div>
+    </div>
+    <div class="des2">
+       Download or view Live Demo of the project : <button class="demo"><a href='./Js/linex.html' target="_blank">Live Demo</a></button> <button class="down"><a href='' style="color: white; text-decoration: none;">Download Code</a></button>
+    </div>
+    </div>
+    <!--top to bottom button CSS in news.css-->
+
+    <div class="footer">
+        <div class="brand">Web Design And Development By Tech-CapLK</div>
+       
+       </div>
+    <script src="./Js/prism.js"></script>
+    <script src="./Js/code.js"></script>
+</body>
+</html>

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tech-Cap LK</title>
+    <link rel="stylesheet" href="css/header,sidebar,slider1,carasoul.css">
+    <link rel="stylesheet" href="css/tabs,about.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="Js/script.js" defer></script>
+    <script src="scriptContact.js" defer></script>
+   
+  </head>
+  <body>
+    <div class="black_cover status">
+  
+    </div>
+
+<!-- Navbar-->
+<div class="btnmenu">
+  <span class="fas fa-bars"></span>
+</div>
+<section id="Home"></section> <!-- Home-->
+<div class="titlebar" id="section1">
+ 
+  <div class="subcontainer">
+    <div class="leftside">
+      <img src="images/css.png" alt="">
+      <img src="images/js.png" alt="">
+      <img src="images/java.png" alt="">
+      <img src="images/node.png" alt="">
+      <img src="images/html5.png" alt="">
+    </div>
+    <div class="rigthside">
+        <div class="btn4login">
+           <button><a href="#">REGISTER</a></button>
+           <button><a href="#">SIGN IN</a></button>
+           
+        </div>
+        <div class="logo3">
+           <img src="images/logo.jpg" alt="">
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+ <!-- Side bar menu-->  
+
+  <nav class="sidebar">
+       <div class="logo"><img src="images/logo.jpg" alt="logo">
+      </div>
+        <ul>
+          <li class="active"><a class="navigation" href="#Home"><i class="fa-solid fa-house-chimney"></i>&nbsp&nbsp&nbsp&nbspHome</a></li>
+          <li><a class="navigation" href="#About"><i class="fa-solid fa-address-card"></i>&nbsp&nbsp&nbsp&nbspAbout</a></li>
+          <li><a href="#" class="pro-btn"><i class="fa-solid fa-bars-progress"></i>&nbsp&nbsp&nbsp&nbspProjects
+            <span class="fas fa-caret-down first"></span>
+          </a>
+            <ul class="pro-show">
+              <li><a href="#" class="Beginner">Beginner Projects</a></li>
+              <li><a href="#">Intermediate Projects</a></li>
+              <li><a href="#">Advanced Projects</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="ser-btn"><i class="fa-solid fa-briefcase"></i>&nbsp&nbsp&nbsp&nbspServices
+            <span class="fas fa-caret-down second"></span>
+          </a>
+            <ul class="ser-show">
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Web Hosting</a></li>
+            </ul>
+          </li> 
+          <li><a class="navigation" href="#News"><i class="fa-solid fa-newspaper"></i>&nbsp&nbsp&nbsp&nbspNews and Updates</a></li>
+          <li><a class="navigation" href="#Contact"><i class="fa-solid fa-mobile-screen-button"></i>&nbsp&nbsp&nbsp&nbspContact</a></li>
+          <div class="social-media">
+            <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://web.facebook.com/" target="_blank" class="FB"> <i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </ul>
+    
+    
+     </nav>
+     
+   
+   <!-- buttons for mobile mode register and sigh in-->
+      <div class="space">
+
+     </div>
+     <div class="btn4mobile">
+       <button class="btn4m"><a href="#">REGISTER</a></button>
+       <button class="btn4m"><a href="#">SIGN IN</a></button>
+     </div>
+
+  
+
+
+
+  <!--image slider 1-->
+
+    <div class="slider-container">
+
+      <p class="shading-image"> </p>
+      <div id="logo-window" class="show"><img src="images/logo.jpg" alt="logo"></div>
+      <div class="image-container">
+        <img src="images/banner1.png" alt="Greetings" width="100%" height="600px">
+        <img src="images/banner2.png" alt="Introduntion" width="100%" height="600px">
+         <img src="images/banner3.png" alt="Updates" width="100%" height="600px">
+      </div>
+      
+      <i class="fa-solid fa-angles-left btn1 prev"></i>
+      <i class="fa-solid fa-angles-right btn1 next"></i>
+  </div>
+
+<!--card slider navigations-->
+
+<div class="nav">
+        <div class="details">
+            <div class="para">Latest Projects</div>
+            <div class="btn23"><a href="#">View All</a></div>
+            <div class="num">24 Projects</div>
+        </div>
+    
+    <div class="arrows">
+        <i id="left" class="fa-solid fa-angle-left arrs"></i>
+    <i id="right" class="fa-solid fa-angle-right arrs"></i>
+    </div>
+    
+</div>
+
+<!--card slider-->
+
+    <div class="container">
+    <div class="wrapper">
+      
+      <ul class="carousel">
+
+        <li class="card">
+            
+          <div class="img" id="img1"><img src="images/img-1.PNG" alt="img" draggable="false"></div>
+          
+        
+          <div class="content">
+            <P class="title">Digital Clock</P>
+            <button class="btnview"><a href="#">View Project</a></button>
+          </div>
+        </li>
+        <li class="card">
+          <div class="img" id="img2"><img src="images/videoPopUp.PNG" alt="img" draggable="false"></div>
+          
+          <div class="content">
+            <P class="title">Video Pop Up</P>
+            <button class="btnview"><a href="#">View Project</a></button>
+          </div>
+        </li>
+        <li class="card">
+          <div class="img"><img src="images/RCG.PNG" alt="img" draggable="false"></div>
+          
+          <div class="content">
+            <P class="title">Random Colour Generator</P>
+            <button class="btnview"><a href="#">View Project</a></button>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="img"><img src="images/cardslider.PNG" alt="img" draggable="false"></div>
+         
+          <div class="content">
+            <P class="title">Card Slider</P>
+            <button class="btnview"><a href="#">View Project</a></button>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="img"><img src="images/navigationOnPage.PNG" alt="img" draggable="false"></div>
+          
+          <div class="content">
+            <P class="title">On Page Navigation</P>
+            <button class="btnview"><a href="#">View Project</a></button>
+          </div>
+        </li>
+        <li class="card">
+          <div class="img"><img src="images/popupwindow.PNG" alt="img" draggable="false"></div>
+         
+          <div class="content">
+            <P class="title">Pop Up Window</P>
+            <button class="btnview"><a href="#">View Project</a></button>
+          </div>
+        </li>
+      </ul>
+      
+    </div>
+</div>
+
+<!--tabs selection-->
+
+<div class="section-center">
+  <div class="image">
+    <img src="images/code.JPG" id="img123" alt="" class="imgtab activision"/>
+    <img src="images/live.JPG" id="img234" class="imgtab"/>
+    <img src="images/video.JPG" id="img345" class="imgtab"/>
+  </div>
+  <div class="tabs">
+    <!-- btn container -->
+    <div class="btn-container">
+      <button id="321" class="button90 live" data-id="step1">SOURCE CODE</button>
+      <button id="432" class="button90" data-id="step2">LIVE DEMO</button>
+      <button id="543" class="button90" data-id="step3">VIDEO</button>
+    </div>
+    <div class="tabs-content">
+      <!-- single item -->
+      <div class="content123 live" id="step1">
+        <h3>Step 1</h3>
+        <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sint cumque quasi, amet impedit tempore necessitatibus iste. Ratione possimus perspiciatis sapiente, ex alias, ipsam sint beatae vel repellat aperiam corrupti porro et molestiae nobis itaque recusandae vitae atque! Reiciendis voluptatum molestiae autem consectetur corporis libero itaque quo mollitia quod! Corrupti doloribus veniam iusto soluta laborum saepe debitis reiciendis atque nihil eaque ducimus quo ullam ipsum, laboriosam velit vitae sint, eius molestiae unde, tempora hic ipsam? Cupiditate, beatae. Nostrum eos, id velit nisi libero exercitationem, et fugiat assumenda mollitia debitis deleniti, illum iusto. Officiis, ratione ex? Magni, impedit vel. Quam, eaque.</p>
+      </div>
+      <!-- end of single item -->
+      <!-- single item -->
+      <div class="content123" id="step2">
+        <h3>Step 2</h3>
+        <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci molestiae doloremque enim deleniti voluptatum necessitatibus, facilis et quas, quasi magni obcaecati iusto ipsam ipsum amet autem labore dignissimos accusantium dolorem perspiciatis non harum, alias vel a asperiores? Qui amet tempora mollitia quos, facilis debitis nemo praesentium, optio facere nostrum, eum totam magnam quasi laborum sint repellendus quibusdam vero? Ipsum explicabo officiis culpa delectus quasi cumque saepe voluptates accusantium voluptatem omnis iste, sequi beatae quae dolor vero nostrum at amet eum dolores ut. Autem velit eius, libero adipisci dolore harum accusantium ipsum, voluptate ad recusandae vitae blanditiis? Harum nihil molestiae cum!
+        </p>
+
+      </div>
+      <!-- end of single item -->
+      <!-- single item -->
+      <div class="content123" id="step3">
+        <h3>Step 3</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, asperiores magnam? In expedita laudantium magnam ratione alias minus nemo incidunt, dignissimos architecto placeat corporis molestiae labore vitae ullam laborum ut culpa eaque officiis, blanditiis sunt fugit ex? Neque quod mollitia delectus ipsa? Dolore veritatis, tenetur laudantium possimus unde debitis enim est illum, ea distinctio quod itaque quaerat ex sint eum optio in saepe labore sunt odit? Dolore, iusto! Ducimus sint laudantium consectetur. Velit facere culpa excepturi ad, quae distinctio iure incidunt. Odio alias laboriosam unde quo repudiandae corporis laborum quaerat asperiores minima quis in nam maxime recusandae iure, provident a?
+          </p>
+      </div>
+      <!-- end of single item -->
+    </div>
+  </div>
+</div>
+
+<!--about section-->
+<section id="About"><!-- About -->
+   <div class="about-1"> 
+    <p class="titleAU">About Tech-CapLK</p>
+    <p class="descAU">
+      Welcome to Tech-CapLK, your ultimate destination for web development excellence, lovingly crafted by the dedicated individual, Purna Anupama. At Tech-CapLK, our mission is simple yet powerful: to empower new enthusiasts on their journey into the captivating world of web development. We understand that starting out can be daunting, which is why we've curated a treasure trove of fun and easy projects, designed to be your stepping stones. Whether you're intrigued by the magic of HTML, the artistry of CSS, or the dynamism of JavaScript and its frameworks, we've got you covered. What makes Tech-CapLK truly stand out are the abundant resources we provide. Each project on our platform boasts a live demonstration, a step-by-step video guide, and the holy grail – free source code. Our aim is to light the way for beginner web developers, to nurture their skills, and to make their learning journey an absolute delight. Join us today, and let's embark on this incredible web development adventure together.</p>
+   </div>
+   <div class="about-2">
+    <div class="content-box-lg">
+      <div class="containerz">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="about-item">
+              <i class="fa fa-eye" aria-hidden="true"></i>
+              <h3>Vision</h3>
+              <hr>
+              <p>Our vision at Tech-CapLK is to become the go-to hub for novice web developers, enabling them to unleash their creativity and build a solid foundation in web development. We envision a future where every aspiring developer can confidently embark on their coding journey, supported by a thriving community and a plethora of exciting projects. Tech-CapLK will continue to expand its offerings, enhancing the learning experience for beginners, and promoting collaboration and innovation in the web development world. Our vision is to foster a community of web developers who are well-equipped, motivated, and inspired to create amazing projects and make a meaningful impact in the digital realm.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="about-item text-center">
+              <i class="fa fa-bolt" aria-hidden="true"></i>
+              <h3>Mission</h3>
+              <hr>
+              <p>At Tech-CapLK, our mission is to provide an inclusive platform for budding web developers, curated by the passionate individual, Purna Anupama. We are committed to simplifying the complex world of web development, offering new enthusiasts an opportunity to learn, grow, and excel. We strive to empower beginners by offering a wide array of engaging, user-friendly projects using HTML, CSS, JavaScript, and cutting-edge frameworks. Our mission is to foster an environment where knowledge is freely shared, and where each project comes with a live demonstration, comprehensive video guides, and free source code, making the journey to web development expertise accessible to all.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+</section>
+<!--top to bottom button CSS in news.css-->
+<div class="TopToBottom .HideUpBTN">
+  <i class="fa-solid fa-arrow-up"></i>
+</div>
+<!-- news and updates--> 
+
+<div class="NewsAndUpdates" id="News">  <!-- News -->
+  <div class="NewsUpdateHeading">
+      <p class="NewsTitle">News and Updates</p>
+      <p class="TodayDate">3rd of January 2023</p>
+  </div>
+ 
+  <div class="containerNews">
+      <div class="box">
+          
+          <p class="headline">Python Developers Survey: Python 2 clings on for certain use cases</p>
+          <button class="viewHere">Read Article</button>
+      </div>
+      <div class="box">
+          
+          <p class="headline">ChatGPT Isn't Coming for Your Coding Job</p>
+          <button class="viewHere">Read Article</button>
+      </div>
+      <div class="box">
+        
+          <p class="headline">For JavaScript Developers, More Choices Mean Hard Choices</p>
+          <button class="viewHere">Read Article</button>
+      </div>
+      <div class="box">
+          
+          <p class="headline">How to Make Your React Apps 15x Faster</p>
+          <button class="viewHere">Read Article</button>
+      </div>
+      <div class="box">
+        
+          <p class="headline">New free, interactive Angular course for beginners on Sololearn</p>
+          <button class="viewHere">Read Article</button>
+      </div>
+      <div class="box">
+      
+          <p class="headline">Headline3</p>
+          <button class="viewHere">Read Article</button>
+      </div>
+      <div class="box">
+        
+          <p class="headline">Headline4</p>
+          <button class="viewHere">Read Article</button>
+      </div>
+      <div class="box">
+          
+          <p class="headline">Experimental CSS Shaders Bring Photoshop Filters to the Web</p>
+          <button class="viewHere">Read Article</button>
+      </div>
+     
+  </div>
+</div>
+
+<!-- contact form -->
+
+<div id="Contact" class="contactPage">   <!-- contact -->
+  <p class="ConTitle">Contact</p>
+  <div class="KeepInTouch">
+     <div class="wrapper23">
+          <header>Send us a Message</header>
+          <form action="#">
+            <div class="dbl-field">
+              <div class="field">
+                <input type="text" name="name" placeholder="Enter your name">
+                <i class='fas fa-user'></i>
+              </div>
+              <div class="field">
+                <input type="text" name="email" placeholder="Enter your email">
+                <i class='fas fa-envelope'></i>
+              </div>
+            </div>
+            <div class="dbl-field">
+              <div class="field">
+                <input type="text" name="phone" placeholder="Enter your phone">
+                <i class='fas fa-phone-alt'></i>
+              </div>
+              <div class="field">
+                <input type="text" name="website" placeholder="Enter your website">
+                <i class='fas fa-globe'></i>
+              </div>
+            </div>
+            <div class="message">
+              <textarea placeholder="Write your message" name="message"></textarea>
+              <i class="fa-solid fa-message"></i>
+            </div>
+            <div class="button-area">
+              <button type="submit">Send Message</button>
+                    <span></span>
+            </div>
+          </form>
+        </div>
+        <div class="wrapper24">
+          <div class="contactInfo">
+             
+              <p><i class="fa-solid fa-location-dot"></i> Address : 78 C, Pelandagoda Road, Panagoda, Homagama, Srilanka</p>
+              <p><i class="fa-solid fa-mobile-screen"></i> Mobile : +94740339157 / +94750339153</p>
+              <p><i class="fa-solid fa-envelope"></i> E mail : anupamahera2022@gmail.com</p>
+             
+          </div>
+          <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31691.031713301993!2d79.98557537602558!3d6.845091509960784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2518e99e2ee8d%3A0xc3eebfdbc86273ee!2sHomagama!5e0!3m2!1sen!2slk!4v1697053449144!5m2!1sen!2slk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="media">
+             <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-square-github"></i>
+              <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+  </div>
+
+</div>
+ 
+  </form>
+</div>
+<div class="footer">
+  <div class="brand">Web Design And Development By Tech-CapLK</div>
+ 
+ </div>
+
+<script>
+
+const btnMenu = document.querySelector('.btnmenu');
+const cover = document.querySelector('.black_cover.status');
+const side = document.querySelector('.sidebar');
+
+btnMenu.addEventListener('click',()=>{
+  cover.classList.toggle('status');
+});
+cover.addEventListener('click',()=>{
+  cover.classList.toggle('status');
+  side.classList.toggle('show');
+  btnMenu.classList.toggle('click');
+})
+
+   $('.btnmenu').click(function(){
+    $(this).toggleClass("click");
+    $('.sidebar').toggleClass("show");
+  });
+  $('nav ul li').click(function(){
+   $(this).addClass("active").siblings().removeClass("active"); 
+});
+  $('.pro-btn').click(()=>{
+   $('nav ul .pro-show').toggleClass('show');
+   $('nav ul .first').toggleClass('rotate');
+  });
+  $('.ser-btn').click(()=>{
+   $('nav ul .ser-show').toggleClass('show1');
+   $('nav ul .second').toggleClass('rotate');
+  });
+ 
+//about page
+
+const tabs = document.querySelector(".tabs");
+const btns = document.querySelectorAll(".button90");
+const articles = document.querySelectorAll(".content123");
+tabs.addEventListener("click", function (e) {
+  const id = e.target.dataset.id;
+  if (id) {
+    // remove selected from other buttons
+    btns.forEach(function (btn) {
+      btn.classList.remove("live");
+    });
+    e.target.classList.add("live");
+    // hide other articles
+    articles.forEach(function (article) {
+      article.classList.remove("live");
+    });
+    const element = document.getElementById(id);
+    element.classList.add("live");
+  }
+});
+//images change
+const btn123= document.getElementById('321');
+const btn234= document.getElementById('432');
+const btn345= document.getElementById('543');
+const img1 = document.getElementById('img123');
+const img2 = document.getElementById('img234');
+const img3 = document.getElementById('img345');
+btn123.addEventListener('click',()=>{
+  img1.classList.add('activision');
+  img2.classList.remove('activision');
+  img3.classList.remove('activision');
+})
+btn234.addEventListener('click',()=>{
+  img1.classList.remove('activision');
+  img2.classList.add('activision');
+  img3.classList.remove('activision');
+})
+btn345.addEventListener('click',()=>{
+  img1.classList.remove('activision');
+  img2.classList.remove('activision');
+  img3.classList.add('activision');
+})
+
+
+
+
+//image slider first
+
+const nextEl = document.querySelector(".next");
+const prevEl = document.querySelector(".prev");
+const imageContainerEl = document.querySelector(".image-container");
+const dark = document.querySelector(".shading-image");
+const content = document.getElementById("logo-window");
+
+let currentImg = 1;
+
+let timeout;
+
+
+
+nextEl.addEventListener("click",()=>{
+  currentImg++;
+  clearTimeout(timeout);
+  updateImg();
+})
+
+prevEl.addEventListener("click",()=>{
+    currentImg--;
+    clearTimeout(timeout);
+    updateImg();
+  })
+
+
+
+  updateImg();
+
+function updateImg(){
+    if(currentImg > 3){
+        currentImg=1;
+    }else if(currentImg < 1){
+        currentImg = 3;
+    }
+  imageContainerEl.style.transform= `translateX(-${(currentImg-1) * 100}%)`;
+  timeout = setTimeout(()=>{
+    currentImg++;
+    updateImg();
+   },6000);
+
+} 
+
+dark.addEventListener("mouseover",()=>{
+    clearTimeout(timeout);
+ }) ;
+
+ dark.addEventListener("mouseleave",()=>{
+    updateImg();
+  });
+
+  imageContainerEl.addEventListener("transitionend",()=>{
+  content.className="show";
+});
+imageContainerEl.addEventListener("transitionstart",()=>{
+  content.className="hide";
+});
+
+//news and updates date
+
+
+const Today = document.querySelector('.TodayDate'); 
+
+const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+const date = new Date;
+let day = date.getDay();
+let month = date.getMonth();
+let date1 = date.getDate()
+
+if(date1 == 1){
+    setter = "st";
+}else if(date1 == 2){
+    setter = "nd";
+}else if(date1 == 3){
+    setter = "rd";
+}else{
+    setter = "th";
+}
+
+Today.innerText = `${days[day]}, ${date1}${setter} of ${months[month]}`;
+
+//navigation on page
+  // $('a').click(function(event){
+  //   event.preventDefault();
+  //   var thisSection = $(this).attr('href');
+  //  $('html , body').stop().animate({scrollTop: $(thisSection).offset().top-80},200);
+  // });
+
+const navLinks = document.querySelectorAll('a');
+navLinks.forEach(function(eachLink){
+  eachLink.addEventListener('click',smoothScroll);
+})
+
+function smoothScroll(event){
+  event.preventDefault();
+  const targetId = event.target.getAttribute('href');
+  const targetSection = document.querySelector(targetId);
+  const original = (targetSection.getBoundingClientRect().top)-80;
+  window.scrollBy({top:original, left:0,behavior : 'smooth'})
+}
+
+
+//back to top
+let mybutton = document.querySelector(".TopToBottom");
+
+window.addEventListener('scroll',()=>{
+  if(window.pageYOffset > 500){
+  mybutton.style.visibility = "visible"
+  }else if(window.pageYOffset < 500){
+    mybutton.style.visibility = "hidden"
+  }
+});
+
+  mybutton.addEventListener('click',()=>{
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  });
+</script>
+
+
+
+  </body>
+</html>

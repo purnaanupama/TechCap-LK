@@ -1,0 +1,108 @@
+.container{
+    width: 600px;
+    height: 500px;
+    overflow: auto;
+    background-color:  rgb(225, 223, 223); ;
+    border: 3px solid rgb(163, 163, 163);
+    border-radius: 7px;
+    box-shadow:  4px 4px 6px rgba(0,0,0,.5); 
+}
+
+.code-wrapper{
+    position: relative;
+    border-radius: 7px;
+}
+
+#copy-button{
+   position: absolute;
+   top: 8px;
+   right: 8px;
+   padding: 7px;
+   background-color: rgb(50, 49, 51); 
+   color: azure;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: all 0.2s ease-in;
+   opacity: 0;
+   border: none ;
+}
+#copy-button.show-msg{
+    display: none;
+}
+#copy-button1{
+   position: absolute;
+   top: 8px;
+   right: 8px;
+   padding: 7px;
+   background-color: rgb(50, 49, 51); 
+   color: azure;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: all 0.2s ease-in;
+opacity: 0;
+   border: none ;
+}
+#copy-button2{
+   position: absolute;
+   top: 8px;
+   right: 8px;
+   padding: 7px;
+   background-color: rgb(50, 49, 51); 
+   color: azure;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: all 0.2s ease-in;
+opacity: 0;
+   border: none ;
+}
+#copy-button1.show-msg{
+    display: none;
+}
+#copy-button2.show-msg{
+    display: none;
+}
+.code-wrapper:hover #copy-button1{
+    opacity: 1;
+}
+.code-wrapper:hover #copy-button{
+    opacity: 1;
+}
+.code-wrapper:hover #copy-button2{
+    opacity: 1;
+}
+
+/* Style the scrollbar track */
+.container::-webkit-scrollbar-track {
+    background-color: rgb(68, 65, 65); /* Light gray background for the track */
+    border-radius: 10px;
+}
+
+/* Style the scrollbar thumb */
+.container::-webkit-scrollbar-thumb {
+    background-color: darkgray; /* Dark gray color for the thumb */
+    width: 6px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Style the scrollbar */
+.container::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+    border-radius: 5px; /* Radius of the scrollbar */
+    width: 8px;
+}
+#code{
+    border-radius: 20px;
+    width: 12px;
+} 
+
+#code1{
+
+    border-radius: 20px;
+    width: 12px;
+}
+#code2{
+
+    border-radius: 20px;
+    width: 12px;
+}

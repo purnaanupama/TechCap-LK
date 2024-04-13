@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Play&family=Titillium+Web&display=swap');
+
+body{background: #e8d0f2;
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family:   'Nunito', sans-serif;}
+
+h1{text-align: center;
+   color: blueviolet;}
+.btn{
+    font-family:   'Nunito', sans-serif; 
+}
+.btn:hover{
+    background-color: #38024f;
+}
+
+.container{display: flex;
+           width: 80vw;
+           height: 600px;
+           gap: 8px;
+           flex-wrap: wrap; /* when the tab is getting thiner content moves down one another */ 
+           justify-content: center;}
+
+.colour-container{background-color: orange;
+                  width: 200px;
+                  height: 130px;
+                  color:white;
+                  margin: 5px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  font-size: 25px;
+                  text-shadow: 2px 2px 4px rgba(0,0,0,.5);  /*adds shadow to text */
+                  box-shadow:  2px 2px 4px rgba(0,0,0,.5); 
+                  border-radius: 10px;} 
+   
+
+
+

@@ -1,0 +1,189 @@
+
+.NewsAndUpdates{
+    width: 100%;
+    margin:0px 10px 10px 0px auto;
+    height: 100%;
+   background-color: rgb(54, 54, 54);
+}
+.containerNews{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(15,100px);
+    grid-gap:15px;
+    padding: 40px;
+    height: 1000px;
+   
+}
+.NewsUpdateHeading{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px 10px;
+}
+.NewsTitle{
+    font-size: 35px;
+    color: azure;
+    
+}
+.TopToBottom{
+    position: fixed;
+    visibility: hidden;
+    width: 50px;
+    height: 50px;
+    background-color: #cccbcb;
+    opacity: 0.7;
+    z-index: 20;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TopToBottom i{
+   font-size: 20px;
+   text-align: center;
+}
+.TopToBottom:hover{
+    opacity: 1;
+}
+.TodayDate{
+    font-size: 20px;
+    color: azure;
+}
+.box{
+    background: rgb(152, 147, 240);
+    position: relative;
+    border-radius: 4px;
+}
+.box:hover{
+    box-shadow: 0px 2px 4px 4px rgba(0,0,0,0.4);
+}
+.box .headline{
+    padding: 20px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    font-size: 20px;
+    color: white;
+    background: linear-gradient(to right,
+    rgba(0,0,0,1),
+    rgba(0,0,0,0));
+}
+.box .viewHere{
+    position: absolute;
+    bottom: 7px;
+    right: 7px;
+    padding: 6px 12px;
+   font-family: 'Courier New', Courier, monospace;
+   border: none;
+   background-color: rgb(202, 202, 198);
+}
+.box .viewHere::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.box .viewHere:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.box:nth-child(1){
+    grid-column : 1 / 3;
+    grid-row: 1/3;
+    background-image: url("https://images.unsplash.com/photo-1526379095098-d400fd0bf935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80");
+    background-position: center;}
+
+.box:nth-child(2){
+    grid-row:-12/-16 ;
+    background-position: center;
+    background-image: url("https://www.mindinventory.com/blog/wp-content/uploads/2022/03/react-nodejs-1024x647.webp");}
+
+.box:nth-child(3){
+    grid-column : 1 / 3;
+    grid-row: 3/6;
+    background-image: url("https://miro.medium.com/v2/resize:fit:720/format:webp/0*cZMay_yxiJQTEZtm.jpg");
+    background-position: center;
+}
+.box:nth-child(8){
+    grid-row: 6/8;
+    background-image: url("https://ares.shiftdelete.net/2018/01/Photoshop-egitim-1.jpg");
+    background-position: center;
+}
+.box:nth-child(4){
+grid-row: -12/-9;
+background-image: url("https://www.mindinventory.com/blog/wp-content/uploads/2022/03/react-nodejs-1024x647.webp");
+background-position: center;
+}
+.box:nth-child(7),.box:nth-child(6){
+display: none;
+}
+.box:nth-child(5){
+    grid-row: 6/8;
+    background-image: url("https://miro.medium.com/v2/resize:fit:720/format:webp/1*bMgQ8MhbnQexpqHgIgBJPA.png");
+    background-position: center;
+}
+/*footer styles*/
+.footer{
+    width: 100%;
+    background: #333;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.brand{
+    padding-left: 30px;
+    color: #b6b0b0;
+}
+
+@media screen and (max-width: 750px){
+    .containerNews{ grid-template-columns: 1fr ; }
+
+    .NewsAndUpdates{
+        height: 100%;}
+
+    .containerNews{
+        height: 100%; }
+       
+    .box:nth-child(1){
+        grid-column : 1 / 5;
+        grid-row: 1/3; }
+
+    .box:nth-child(2){
+        grid-row:6/8 ;
+        grid-column: 1/5; }
+
+    .box:nth-child(3){
+        grid-column : 1 / 5;
+        grid-row: 3/6; }
+
+    .box:nth-child(4){
+           grid-row: 10/12;
+           grid-column : 1 / 5; }
+
+    .box:nth-child(8){
+            grid-row: 12/14;
+            grid-column : 1 / 5; }
+
+    .box:nth-child(5){
+            grid-row: 8/10;
+            grid-column : 1 / 5; }
+}
+@media screen and (max-width: 400px){
+    
+    .NewsTitle{
+        font-size: 30px;
+        color: azure;
+    }
+    .TodayDate{
+        font-size: 16px;
+        color: azure;
+    }
+}
